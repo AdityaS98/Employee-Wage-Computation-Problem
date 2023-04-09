@@ -16,7 +16,7 @@ public class EmployeeWageBuilder {
         /*
          * 1) Calculated a random value
          */
-        double is_present = Math.random();
+        double is_present = Math.random()*3;
         /*
          *2) Checked condition whether the employee was present
          */
@@ -33,11 +33,15 @@ public class EmployeeWageBuilder {
 
 
         }
+        else if ((is_present >= 1) && (is_present < 2)){
+            System.out.println("Employee is partially present");
+        }
+
         /*
          * 3) Printing the display message if the employee is absent
          */
 
-        else {
+        {
             System.out.println("Employee is absent");
         }
     }
